@@ -24,11 +24,11 @@ def load_gui(self):
     self.text_dest.grid(row=1, column=0, rowspan=1, columnspan=2, padx=(5, 0), pady=(10, 20))
 
     # create and place a source button
-    self.button_source = tk.Button(self.master, width=12, height=1, text="Source", command=lambda: file_xfer_func.get_source(self))
+    self.button_source = tk.Button(self.master, width=12, height=1, text="Source", command=lambda: filefunction.get_source(self))
     self.button_source.grid(row=0, column=2, padx=(10, 0), pady=(10, 20))
 
     # create and place a destination button
-    self.button_dest = tk.Button(self.master, width=12, height=1, text="Destination", command=lambda: file_xfer_func.get_dest(self))
+    self.button_dest = tk.Button(self.master, width=12, height=1, text="Destination", command=lambda: filefunction.get_dest(self))
     self.button_dest.grid(row=1, column=2, padx=(10, 0), pady=(10, 20))
     
     # create and place a transfer button
